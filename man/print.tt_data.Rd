@@ -2,7 +2,7 @@
 % Please edit documentation in R/utils.R
 \name{print.tt_data}
 \alias{print.tt_data}
-\title{print utility for tt_data objects}
+\title{muestra los tt_data objects}
 \usage{
 \method{print}{tt_data}(x, ...)
 }

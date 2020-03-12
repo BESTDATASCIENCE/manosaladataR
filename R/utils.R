@@ -1,5 +1,5 @@
 
-#' @title print utility for tt_data objects
+#' @title muestra los tt_data objects
 #' @inheritParams base::print
 #' @importFrom tools file_path_sans_ext
 #' @export
@@ -16,7 +16,7 @@ print.tt <- function(x,...){
   message("Available datasets for download:\n\t", paste(attr(x,".files"), "\n\t", collapse = ""))
 }
 
-#' @title Readme HTML maker and Viewer
+#' @title Lee el HTML y lo muestra
 #' @param tt tt_data object for printing
 #' @importFrom rstudioapi viewer
 #' @export

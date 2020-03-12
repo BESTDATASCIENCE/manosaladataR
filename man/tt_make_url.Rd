@@ -2,7 +2,7 @@
 % Please edit documentation in R/tt_make_url.R
 \name{tt_make_url}
 \alias{tt_make_url}
-\title{given inputs generate valid TidyTuesday URL}
+\title{dado los inputs generan URL validos de Manos a la data}
 \usage{
 tt_make_url(x, week)
 }

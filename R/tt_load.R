@@ -1,4 +1,4 @@
-#' @title Load TidyTuesday data from Github
+#' @title Carga bases de datos de Manos a la data de Github
 #'
 #' @param x string representation of the date of data to pull, in YYYY-MM-dd format, or just numeric entry for year
 #' @param week left empty unless x is a numeric year entry, in which case the week of interest should be entered
@@ -32,7 +32,7 @@ tt_load <- function(x, week, ...) {
 #   x[[ name ]]
 # }
 
-#' @title  Load TidyTuesday data from Github
+#' @title  Carga bases de datos de Manos a la data de Github
 #'
 #' @description Pulls the Readme and URLs of the data from the TidyTuesday github folder based on the date provided
 #'

@@ -2,7 +2,7 @@
 % Please edit documentation in R/tt_read_data.R
 \name{read_rda}
 \alias{read_rda}
-\title{utility to load RDA with out using assigned name in envir}
+\title{funcion para cargar el RDA sin un nombre especifico en el enviroment}
 \usage{
 read_rda(path)
 }

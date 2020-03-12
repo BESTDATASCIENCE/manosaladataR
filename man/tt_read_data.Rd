@@ -2,7 +2,7 @@
 % Please edit documentation in R/tt_read_data.R
 \name{tt_read_data}
 \alias{tt_read_data}
-\title{Reads in TidyTuesday datasets from Github repo}
+\title{Lee las bases de datos de Manos a la data del repo de Github}
 \usage{
 tt_read_data(tt, x, guess_max = 5000)
 }

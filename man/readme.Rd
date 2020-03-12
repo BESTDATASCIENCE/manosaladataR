@@ -2,7 +2,7 @@
 % Please edit documentation in R/utils.R
 \name{readme}
 \alias{readme}
-\title{Readme HTML maker and Viewer}
+\title{Lee el HTML y lo muestra}
 \usage{
 readme(tt)
 }

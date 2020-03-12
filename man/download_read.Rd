@@ -2,7 +2,7 @@
 % Please edit documentation in R/tt_read_data.R
 \name{download_read}
 \alias{download_read}
-\title{utility to assist with 'reading' urls that cannot normally be read by file functions}
+\title{funcion para asistir con la lectura de urls que normalmente no puede ser leidas por medio de una funcion}
 \usage{
 download_read(url, func, ..., guess_max, mode = "w", find_delim = FALSE)
 }

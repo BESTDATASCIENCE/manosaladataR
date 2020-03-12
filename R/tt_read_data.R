@@ -1,4 +1,4 @@
-#' @title Reads in TidyTuesday datasets from Github repo
+#' @title Lee las bases de datos de Manos a la data del repo de Github
 #'
 #' @description  Reads in the actual data from the TidyTuesday github
 #'
@@ -65,7 +65,7 @@ tt_read_url <- function(url, guess_max = 5000) {
   )
 }
 
-#' @title utility to assist with 'reading' urls that cannot normally be read by file functions
+#' @title funcion para asistir con la lectura de urls que normalmente no puede ser leidas por medio de una funcion
 #'
 #' @param url path to online file to be read
 #' @param func the function to perform reading of url
@@ -97,7 +97,7 @@ download_read <- function(url, func, ..., guess_max, mode = "w", find_delim = FA
   return(eval(as.call(func_call)))
 }
 
-#' @title utility to load RDA with out using assigned name in envir
+#' @title funcion para cargar el RDA sin un nombre especifico en el enviroment
 #'
 #' @param path path to RDA file
 #

@@ -1,4 +1,4 @@
-#' @title given inputs generate valid TidyTuesday URL
+#' @title dado los inputs generan URL validos de Manos a la data
 #' @description Given multiple types of inputs, generate
 #' @param x either a string or numeric entry indicating the full date of
 #' @param week left empty unless x is a numeric year entry, in which case the week of interest should be entered

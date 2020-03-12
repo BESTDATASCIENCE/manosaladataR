@@ -2,7 +2,7 @@
 % Please edit documentation in R/tt_load.R
 \name{tt_load}
 \alias{tt_load}
-\title{Load TidyTuesday data from Github}
+\title{Carga bases de datos de Manos a la data de Github}
 \usage{
 tt_load(x, week, ...)
 }

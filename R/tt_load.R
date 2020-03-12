@@ -58,11 +58,11 @@ tt_load_gh <- function(x, week) {
     on.exit({
       print(tt_available())
     })
-    stop("Enter either the year or date of the TidyTuesday Data to extract!")
+    stop("Ingresa el año o fecha de Manosaladata a extraer!")
   }
 
   tt_git_url <- tt_make_url(x, week)
-  message("--- Downloading #TidyTuesday Information for ",basename(tt_git_url)," ----")
+  message("--- Descargando #Manosaladata  para ",basename(tt_git_url)," ----")
   tt_gh_page <- get_tt_html(tt_git_url)
 
   # Extract the raw text as a list
@@ -115,7 +115,7 @@ tt_load_gh <- function(x, week) {
     }
   }
 
-  message("--- Identified ",length(files_to_use)," files available for download ----")
+  message("--- Identificado ",length(files_to_use)," archivos disponible para descargar ----")
 
   structure(
     files_to_use,

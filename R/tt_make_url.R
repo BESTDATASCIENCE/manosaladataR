@@ -9,7 +9,7 @@ tt_make_url <- function(x, week) {
   } else if (valid_year(x)) {
     tt_make_url.year(x, week)
   } else {
-    stop("Entries must render to a valid date or year")
+    stop("Valores tienen que ser una fecha o año valido")
   }
 }
 
@@ -18,7 +18,7 @@ tt_make_url.date <- function(x) {
   tt_formatted_date <- tt_date_format(x)
   tt_folders <- tt_weeks(tt_year)
   if (!as.character(tt_formatted_date) %in% tt_folders[["folders"]]) {
-    stop(paste0(tt_formatted_date, " is not a date that has TidyTuesday data.\n\tDid you mean: ", tt_closest_date(tt_formatted_date, tt_folders$folders), "?"))
+    stop(paste0(tt_formatted_date, " no es una fecha con data en Manosaladata.\n\tTal vez querías decir: ", tt_closest_date(tt_formatted_date, tt_folders$folders), "?"))
   }
 
   file.path("https://github.com/BESTDATASCIENCE/manos-a-la-data/tree/master/data", tt_year, tt_formatted_date)

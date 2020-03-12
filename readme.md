@@ -13,7 +13,7 @@ Actualmente este paquete es exclusivo de Github por lo que si no tienes instalad
 
 ``` r
 install.packages("devtools") #solo en caso no lo tengas instalado
-devtools::install_github("thebioengineer/tidytuesdayR") #para instalar este paquete
+devtools::install_github("BESTDATASCIENCE/manosaladataR") #para instalar este paquete
 ```
 
 ## ¿Cómo usarlo?

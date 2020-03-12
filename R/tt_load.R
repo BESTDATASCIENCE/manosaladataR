@@ -71,8 +71,8 @@ tt_load_gh <- function(x, week) {
     as.character()
 
   readme_html <- gsub(
-    "href=\"/rfordatascience/tidytuesday/",
-    "href=\"https://github.com/rfordatascience/tidytuesday/",
+    "href=\"/BESTDATASCIENCE/manos-a-la-data/",
+    "href=\"https://github.com/BESTDATASCIENCE/manos-a-la-data/",
     readme_html
   )
 

@@ -36,11 +36,11 @@ tt_available <- function() {
 tt_datasets <- function(year) {
   if (missing(year)) {
     url <-
-      "https://github.com/rfordatascience/tidytuesday/blob/master/README.md"
+      "https://github.com/BESTDATASCIENCE/manos-a-la-data/blob/master/README.md"
     table <- 1
   } else {
     url <- file.path(
-      "https://github.com/rfordatascience/tidytuesday/tree/master/data", year
+      "https://github.com/BESTDATASCIENCE/manos-a-la-data/tree/master/data", year
     )
     table <- 2
   }
@@ -70,8 +70,8 @@ print.tt_dataset_table <- function(x, ..., printConsole = FALSE) {
     x$html %>%
       as.character() %>%
       purrr::walk(~ cat(gsub(
-        "href=\"/rfordatascience/tidytuesday/",
-        "href=\"https://github.com/rfordatascience/tidytuesday/",
+        "href=\"/BESTDATASCIENCE/manos-a-la-data/",
+        "href=\"https://github.com/BESTDATASCIENCE/manos-a-la-data/",
         .x
       ), file = tmpHTML, append = TRUE))
     cat("</div>", file = tmpHTML, append = TRUE)
@@ -93,7 +93,7 @@ print.tt_dataset_table <- function(x, ..., printConsole = FALSE) {
 print.tt_dataset_table_list <- function(x, ..., printConsole = FALSE) {
   if (rstudioapi::isAvailable() & !printConsole) {
     tmpHTML <- setup_doc()
-    cat("<h1>TidyTuesday Datasets</h1>", file = tmpHTML, append = TRUE)
+    cat("<h1>Bases de datos por semana de #Manosaladata</h1>", file = tmpHTML, append = TRUE)
     names(x) %>%
       purrr::map(
         function(.x, x) {
@@ -108,8 +108,8 @@ print.tt_dataset_table_list <- function(x, ..., printConsole = FALSE) {
             .x$year,
             "</h2>\n",
             gsub(
-              "href=\"/rfordatascience/tidytuesday/",
-              "href=\"https://github.com/rfordatascience/tidytuesday/",
+              "href=\"/BESTDATASCIENCE/manos-a-la-data/",
+              "href=\"https://github.com/BESTDATASCIENCE/manos-a-la-data/",
               .x$html
             )
           ),

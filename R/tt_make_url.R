@@ -21,7 +21,7 @@ tt_make_url.date <- function(x) {
     stop(paste0(tt_formatted_date, " is not a date that has TidyTuesday data.\n\tDid you mean: ", tt_closest_date(tt_formatted_date, tt_folders$folders), "?"))
   }
 
-  file.path("https://github.com/rfordatascience/tidytuesday/tree/master/data", tt_year, tt_formatted_date)
+  file.path("https://github.com/BESTDATASCIENCE/manos-a-la-data/tree/master/data", tt_year, tt_formatted_date)
 }
 
 tt_make_url.year <- function(x, week) {
@@ -38,7 +38,7 @@ tt_make_url.year <- function(x, week) {
     stop(paste0("Week ", week, " of TidyTuesday for ", x," does not have data available for download from github."))
   }
 
-  file.path("https://github.com/rfordatascience/tidytuesday/tree/master/data", x, tt_date)
+  file.path("https://github.com/BESTDATASCIENCE/manos-a-la-data/tree/master/data", x, tt_date)
 }
 
 tt_weeks <- function(year) {
@@ -50,7 +50,7 @@ tt_weeks <- function(year) {
     ))
   }
 
-  tt_base_url <- file.path("https://github.com/rfordatascience/tidytuesday/tree/master/data", year)
+  tt_base_url <- file.path("https://github.com/BESTDATASCIENCE/manos-a-la-data/tree/master/data", year)
   tt_base_html <- xml2::read_html(tt_base_url)
   tt_folders <- tt_base_html %>%
     rvest::html_nodes(".files") %>%
@@ -73,7 +73,7 @@ tt_weeks <- function(year) {
 }
 
 tt_years <- function() {
-  tt_years <- xml2::read_html("https://github.com/rfordatascience/tidytuesday/tree/master/data") %>%
+  tt_years <- xml2::read_html("https://github.com/BESTDATASCIENCE/manos-a-la-data/tree/master/data") %>%
     rvest::html_nodes(".files") %>%
     rvest::html_nodes(".content") %>%
     rvest::html_nodes("a") %>%

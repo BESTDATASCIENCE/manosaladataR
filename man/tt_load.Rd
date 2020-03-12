@@ -16,9 +16,6 @@ tt_load(x, week, ...)
 \value{
 tt_data object (list class)
 }
-\description{
-Load TidyTuesday data from Github
-}
 \examples{
 tt_output <- tt_load("2019-01-15")
 }

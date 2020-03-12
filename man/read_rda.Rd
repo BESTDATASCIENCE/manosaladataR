@@ -9,6 +9,3 @@ read_rda(path)
 \arguments{
 \item{path}{path to RDA file}
 }
-\description{
-utility to load RDA with out using assigned name in envir
-}

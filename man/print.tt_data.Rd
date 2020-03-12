@@ -11,6 +11,3 @@
 
 \item{...}{further arguments passed to or from other methods.}
 }
-\description{
-print utility for tt_data objects
-}

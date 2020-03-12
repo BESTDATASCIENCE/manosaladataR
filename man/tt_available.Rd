@@ -2,10 +2,10 @@
 % Please edit documentation in R/tt_datasets.R
 \name{tt_available}
 \alias{tt_available}
-\title{Show all TidyTuesdays}
+\title{Muestra todas la bases de datos de manosaladata}
 \usage{
 tt_available()
 }
 \description{
-Show all the available datasets, and corresponding weeks
+Muestra todas las bases disponibles y sus respectivas semanas.
 }

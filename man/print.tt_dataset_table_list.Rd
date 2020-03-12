@@ -2,7 +2,7 @@
 % Please edit documentation in R/tt_datasets.R
 \name{print.tt_dataset_table_list}
 \alias{print.tt_dataset_table_list}
-\title{print utility for tt_dataset_table_list object}
+\title{muestra el objeto de tt_dataset_table_list}
 \usage{
 \method{print}{tt_dataset_table_list}(x, ..., printConsole = FALSE)
 }
@@ -12,7 +12,4 @@
 \item{...}{further arguments passed to or from other methods.}
 
 \item{printConsole}{should output go to the console? TRUE/FALSE}
-}
-\description{
-print utility for tt_dataset_table_list object
 }

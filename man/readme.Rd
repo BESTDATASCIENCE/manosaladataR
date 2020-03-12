@@ -9,6 +9,3 @@ readme(tt)
 \arguments{
 \item{tt}{tt_data object for printing}
 }
-\description{
-Readme HTML maker and Viewer
-}

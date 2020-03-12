@@ -2,13 +2,10 @@
 % Please edit documentation in R/get_tt_html.R
 \name{get_tt_html}
 \alias{get_tt_html}
-\title{Get TidyTuesday URL and HTML}
+\title{Descarga la base de datos con el URL and HTML}
 \usage{
 get_tt_html(git_url)
 }
 \arguments{
 \item{git_url}{url to tidytuesday files}
-}
-\description{
-Get TidyTuesday URL and HTML
 }

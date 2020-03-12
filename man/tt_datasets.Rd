@@ -2,13 +2,13 @@
 % Please edit documentation in R/tt_datasets.R
 \name{tt_datasets}
 \alias{tt_datasets}
-\title{Available datasets}
+\title{Bases de datos disponibles}
 \usage{
 tt_datasets(year)
 }
 \arguments{
-\item{year}{numeric entry representing the year of tidytuesday you want the list of datasets for. Leave empty for most recent year.}
+\item{year}{dato numerico que representa cada periodo anual. Dejarlo vacio para el periodo mas actual.}
 }
 \description{
-list available datasets for that year
+lista de bases de datos completa cada periodo
 }

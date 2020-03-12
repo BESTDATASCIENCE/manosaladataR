@@ -1,5 +1,5 @@
-#' @title Show all TidyTuesdays
-#' @description  Show all the available datasets, and corresponding weeks
+#' @title Muestra todas la bases de datos de manosaladata
+#' @description  Muestra todas las bases disponibles y sus respectivas semanas.
 #' @importFrom xml2 read_html
 #' @import rvest
 #' @importFrom purrr set_names map
@@ -26,9 +26,9 @@ tt_available <- function() {
   )
 }
 
-#' @title Available datasets
-#' @description list available datasets for that year
-#' @param year numeric entry representing the year of tidytuesday you want the list of datasets for. Leave empty for most recent year.
+#' @title Bases de datos disponibles
+#' @description lista de bases de datos completa cada periodo
+#' @param year dato numerico que representa cada periodo anual. Dejarlo vacio para el periodo mas actual.
 #' @import xml2
 #' @import rvest
 #' @export
@@ -57,7 +57,7 @@ tt_datasets <- function(year) {
   )
 }
 
-#' @title print utility for tt_dataset_table object
+#' @title muestra el objeto de tt_dataset_table_list 
 #' @inheritParams base::print
 #' @param printConsole should output go to the console? TRUE/FALSE
 #' @importFrom purrr walk
@@ -83,7 +83,7 @@ print.tt_dataset_table <- function(x, ..., printConsole = FALSE) {
   }
 }
 
-#' @title print utility for tt_dataset_table_list object
+#' @title muestra el objeto de tt_dataset_table_list 
 #' @inheritParams base::print
 #' @param printConsole should output go to the console? TRUE/FALSE
 #' @importFrom purrr walk map

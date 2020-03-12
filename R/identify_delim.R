@@ -1,11 +1,11 @@
-#' @title Identify potential delimeters of file
+#' @title Identifica potenciales delimitadores del archivo
 #'
-#' @param path path to file
-#' @param delims a vector of delimeters to try
-#' @param n number of rows to look at in the file to determine the delimters
-#' @param comment identify lines that are comments if this character is at the beginning
-#' @param skip number of lines to skip at the beginning
-#' @param quote set of quoting characters
+#' @param path ruta del archivo
+#' @param delims un vector de delimitadores a tratar
+#' @param n numero de filas a mirar en el archivo para determinar los delimitadores
+#' @param comment identica las lineas que son comentarios
+#' @param skip numero de lineas a evitar al inicio
+#' @param quote configura el tipo de texto para frases
 #' @importFrom utils download.file
 #'
 

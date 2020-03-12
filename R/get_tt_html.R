@@ -1,4 +1,4 @@
-#' @title Get TidyTuesday URL and HTML
+#' @title Descarga la base de datos con el URL and HTML
 #' @param git_url url to tidytuesday files
 #' @importFrom xml2 read_html
 get_tt_html <- function(git_url) {

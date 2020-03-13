@@ -9,7 +9,7 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.or
 
 ## Instalación
 
-Actualmente este paquete es exclusivo de Github por lo que si no tienes instalado el paquete devtools, debes instalarlo primero y luego este paquete.
+Actualmente este paquete es exclusivo de Github por lo que si no tienes instalado el paquete devtools, debes instalarlo primero y luego este paquete. Recuerda que debes hacer esto ***sólo una vez.***
 
 ``` r
 install.packages("devtools") #solo en caso no lo tengas instalado

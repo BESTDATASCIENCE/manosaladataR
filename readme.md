@@ -17,4 +17,20 @@ devtools::install_github("BESTDATASCIENCE/manosaladataR") #para instalar este pa
 ```
 
 ## ¿Cómo usarlo?
-Pronto pondremos más detalles para facilitarles la vida!
+Aquí algunos ejemplos de cómo poder usar este paquete!
+
+``` r
+library(manosaladataR)
+library(stringi)
+library(dplyr)
+library(ggplot2)
+library(RColorBrewer)
+data <- tt_load("2020-03-11")
+encuesta <- data$encuesta
+head(encuesta) # para ver que hemos descargado correctamente
+colourCount = length(unique(encuesta$`Tipo de actividad`))
+getPalette = colorRampPalette(brewer.pal(9, "Set1"))
+ggplot(data=encuesta, aes(x=Genero, y=Edad1,fill=`Tipo de actividad`)) + geom_bar(stat="identity") + scale_fill_manual(name="Actividades",values = colorRampPalette(brewer.pal(12, "Set2"))(colourCount))+
+  labs(title = "Promedio de horas a la semana que dedican mujeres y hombres adultos a actividades diarias, 2010", subtitle = "Adultos entre 30 y 49 años",caption = "Fuente: INEI",
+       x="Genero", y="Horas a la semana")
+```
